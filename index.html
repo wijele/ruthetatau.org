@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  #protected_image {
+    max-width: 100%;
+    height: auto;    
+    display: none;
+  }
+
+  button {
+    width: 100%;      
+    max-width: 300px;  
+    padding: 10px;
+  }
+</style>
 <script>
 function checkPassword() {
   var password = prompt("Enter password to view image:");
-  if (password == "belt") {
+  if (password == "your_password") {
     document.getElementById("protected_image").style.display = "block";
   } else {
     alert("Incorrect password.");
@@ -14,10 +27,11 @@ function checkPassword() {
 </head>
 <body>
 
-
 <button onclick="checkPassword()">View Image</button>
 
-<img id="protected_image" src="images/IMG_4697.jpeg" width="500" height="auto" style="display: none;">
+<img id="protected_image" src="images/IMG_4697.jpeg">
+
+</div>
 
 </body>
 </html>
