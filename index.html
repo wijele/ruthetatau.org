@@ -1,3 +1,26 @@
-<img src="images/IMG_4697.jpeg"
-  width="600"
-  height=auto/>
+<!DOCTYPE HTML>
+<html>
+   <body>
+      <center>
+         <input type="password" placeholder="passcode" id="tutorial">
+         <button onclick="protectpasscode()">CHECK</button>
+         <script>
+            function protectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = 12345;
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     document.write(<img="images/IMG_4697.jpeg");
+                  } else {
+                     alert("Incorrect Passcode");
+                     location.reload();
+                  }
+               }
+            }
+         </script>
+      </center>
+   </body>
+</html>
