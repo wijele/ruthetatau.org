@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Password Protected Image</title>
 <script>
 function checkPassword() {
   var password = prompt("Enter password to view image:");
-  if (password == "your_password") {
+  if (password == "belt") {
     document.getElementById("protected_image").style.display = "block";
   } else {
     alert("Incorrect password.");
@@ -15,7 +14,6 @@ function checkPassword() {
 </head>
 <body>
 
-<h1>Password Protected Image</h1>
 
 <button onclick="checkPassword()">View Image</button>
 
