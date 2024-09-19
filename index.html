@@ -10,14 +10,15 @@
 
   button {
     width: 100%;      
-    max-width: 300px;  
-    padding: 10px;
+    max-width: 150px;  
+    padding: 20px;
+    font-size: 18px;
   }
 </style>
 <script>
 function checkPassword() {
   var password = prompt("Enter password to view image:");
-  if (password == "your_password") {
+  if (password == "belt") {
     document.getElementById("protected_image").style.display = "block";
   } else {
     alert("Incorrect password.");
